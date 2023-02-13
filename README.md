@@ -11,10 +11,10 @@ These files will be moved to zenodo after the review phase.
 
 ## Hydrate
 
-`hydrate/` contains a script to scrape the work text from AO3 and complete the dataset. If a work is not available anymore, the text will be empty.
+`hydrate/` contains a script to scrape the work text from AO3 and complete the dataset. If a work is not available anymore, the document will be skipped and the ID is logged. Note that this download might take a long time.
 
     $ pip install -r requirements.txt
-    $ python3 hydrate.py hydrate
+    $ python3 hydrate.py
 
 ## Experiments
 
