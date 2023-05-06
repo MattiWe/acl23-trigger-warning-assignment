@@ -1,6 +1,6 @@
 # acl23-trigger-warning-assignment
 
-This repository contains the data and code for the ACL submission (under review) for **Trigger Warning Assignment as a Multi-Label Document Classification Problem**
+This repository contains the data and code for the ACL submission (**submission version until the proceeings release**) for **Trigger Warning Assignment as a Multi-Label Document Classification Problem**
 
 ## Data
 
