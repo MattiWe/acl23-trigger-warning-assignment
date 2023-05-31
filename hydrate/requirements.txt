@@ -1,4 +1,0 @@
-resiliparse
-requests
-click
-tqdm

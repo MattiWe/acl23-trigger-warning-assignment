@@ -1,0 +1,4 @@
+trigger_multilabel_classification/resources/queries
+trigger_multilabel_classification/resources/interval-queries
+trigger_multilabel_classification/resources/dev-data
+trigger_multilabel_classification/resources/*-upload*

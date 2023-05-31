@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "acl23-multi-label-trigger-warnings"
+version = "1.0.0"
+description = "Utilities to annotate and classify trigger warnings for AO3 fanworks"
+authors = ["Matti Wiegmann <mattiwiegmann@gmail.com>"]
+readme = "README.md"
+packages = [{include = "acl23_trigger_warning_assignment"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.3"
+tqdm = "^4.65.0"
+pyyaml = "^6.0"
+snowballstemmer = "^2.2.0"
+scikit-learn = "^1.2.2"
+xgboost = "^1.7.5"
+elasticsearch = "^8.7.0"
+resiliparse = "^0.14.3"
+tokenizers = "^0.13.3"
+krippendorff = "^0.6.0"
+torch = "^2.0.0"
+transformers = "^4.28.1"
+datasets = "^2.12.0"
+evaluate = "^0.4.0"
+wandb = "^0.15.2"
+plotly = "^5.14.1"
+pyspark = "^3.4.0"
+wasabi = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,23 +1,72 @@
 # acl23-trigger-warning-assignment
 
-This repository contains the data and code for the ACL submission (**submission version until the proceeings release**) for **Trigger Warning Assignment as a Multi-Label Document Classification Problem**
+This repository contains the data and code for **Trigger Warning Assignment as a Multi-Label Document Classification Problem**
 
-## Data
+## Get the Data
 
-`data\` contains the 4 datasets used in the study. This repo contains only the labels. The work text should be scraped from AO3 for ethical reasons. Use the hydration utilities to download them. 
+1. Download the dehydrated data from zenodo: https://doi.org/10.5281/zenodo.7976807.
 
-These files will be moved to zenodo after the review phase. 
+2. Hydrate the data:
+
+   ```
+   poetry install
+   poetry run python3 acl23_trigger_warning_assignment/main.py hydrate \
+     -d <path/to/dehydrated/dataset> \
+     --splits "acl23_trigger_warning_assignment/resources/splits"
+   ```
+   
+The hydrator will scrape the work text from AO3 and complete the dataset. 
+NOTE: If a work is not available anymore, the document will be skipped and the ID is logged. If you need a complete version of the data, please contact us directly.
+
+This download might take a long time.
+
+`/resources/splits` contains lists of work_ids, indicating which work from the dataset was included in which data split.
 
 
-## Hydrate
+## Labels
 
-`hydrate/` contains a script to scrape the work text from AO3 and complete the dataset. If a work is not available anymore, the document will be skipped and the ID is logged. Note that this download might take a long time.
+`/resources` contains the developed label sets and the grouped institutional source data for reproducibility. 
+`/resources/institutional-warnings` contains the sources of the labels for reproduction or modification 
 
-    $ pip install -r requirements.txt
-    $ python3 hydrate.py
+
+## Prepare the data for experimentation
+
+Call the following script on each of the splits from the step above to preprocess the texts and convert the dataset into the format used by huggingface. 
+
+   ```
+   poetry run python3 acl23_trigger_warning_assignment/main.py prepare-dataset \ 
+     --input-file <path/to/any.jsonl> \ 
+     --output-file <path/to/any/other.jsonl> \ 
+     --label-set 'warnings_coarse_open'
+   ```
+
+See the `--help` for further explanation. 
+
 
 ## Experiments
 
-`experiments/` contains the scripts we used to run the experiments described in the paper.
-`experiments/utils.py` contains code to pre-process the datasets into the format used by the model scripts. 
+Re-run the experimental evaluation:
 
+   ```
+   poetry run python3 acl23_trigger_warning_assignment/main.py feature-experiments -a \
+     --training  <path/to/train.jsonl> \
+     --validation <path/to/validation.jsonl> \
+     --test <path/to/test.jsonl> \
+     --savepoint <path/to/save/model/in> \
+     --model "`svm` or `xgboost"
+   ```
+
+or 
+
+   ```
+   poetry run python3 acl23_trigger_warning_assignment/main.py neural-experiments \
+     --checkpoint "pre-trained huggingface checkpoint" \
+     --training  <path/to/train.jsonl> \
+     --validation <path/to/validation.jsonl> \
+     --test <path/to/test.jsonl> \
+     --savepoint <path/to/save/model/in> \
+     --lr 2e-5 \
+     -- batches 32 \
+     -- epochs 3 \
+     --name "name used for wandb"
+   ```

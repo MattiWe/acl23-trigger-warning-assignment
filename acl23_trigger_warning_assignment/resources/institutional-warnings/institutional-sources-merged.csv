@@ -1,0 +1,51 @@
+Group,Labels,Merged List,Michigan,Reading,manchester,Stanford,Toronto,Cambridge,Nottingham,York
+"discrimination, bigotry, stereotypes",,,,,,"Discrimination (sexism, racism, homophobia, transphobia",,"discrimination / bigotry of any kind: racism, misogyny, homophobia, transphobia, ableism, anti-Semitism, Islamophobia, etc (this might include specific warnings for slurs or specific incidences such as violent hate crime, or might simply flag the presence of these themes - discussed or represented - within the material)",,"hateful language or behaviour (e.g. racist, sexist, homophobic or transphobic language/behaviour)"
+,homophobia-heterosexism,Homophobia and heterosexism,Homophobia and heterosexism,Homophobia and heterosexism,Homophobia,^,homophobia,^,"Homophobia, biphobia, or heterosexism",^
+,,Heterosexism,,,Heterosexism,,,,,
+,transphobia,Transphobia and trans misogyny,Transphobia and trans misogyny,Transphobia and trans misogyny,Transphobia,^,,^ ,Transphobia,^
+,classism,Classism,Classism,Classism,Classism,,,^ ,Classism,
+,sexism-misogyny,Sexism and misogyny,Sexism and misogyny,Sexism and misogyny,Sexism,^,,,Sexism and misogyny,^
+,,Misogyny,,,Misogyny,,,^,,
+,racism,Racism and racial slurs,Racism and racial slurs,Racism and racial slurs,Racism and racist slurs,^,depictions of racism or oppression,^ racism,Racism and racial slurs,^
+,religious-discrimination,Hateful language direct at religious groups,Hateful language direct at religious groups,Hateful language direct at religious groups,,,,"^ anti-Semitism, Islamophobia","Hateful language directed at religious groups (e.g., Islamophobia, antisemitism)",
+,,islamophobia,,,,,Islamophobia,Islamophobia,,
+,,anti-semitism,,,,,,anti-Semitism,,
+,ableism,ableism,Mental illness and ableism,Mental illness and ableism,Ableism,,,^ ableism,Ableism (discrimination or prejudice against disabled individuals),
+,body-shaming,"fat phobia, body shaming",fat phobia,,fat phobia,body shaming,,,,
+,,,,,,"Stereotypes (about gender, race, national origin, age, or other status characteristics)",,,,
+,,age,,,,age,,,,
+aggression,violence,violence,Violence,Violence,Violence,"Violence, death, torture",,"physical violence, abuse and torture",Violence,violence
+,,police violence,,,,,police violence,,,
+,kidnapping-abduction,Kidnapping and abduction,Kidnapping and abduction,Kidnapping and abduction,Kidnapping,,,,Kidnapping and abduction,
+,death,death,Death or dying,Death or dying,Death and/or dying,death,,"death (distressing, violent, murder or suicide)",Death or dying,death
+,,genocide,,,,,genocide,,,
+,war,war,,,,war,atrocities of war,,,
+,other-aggression,Slavery and modern slavery,,,,,,,Slavery and modern slavery,
+abuse,abuse,,Abuse,Abuse,Abuse,"Abuse (torture, sexual abuse, child abuse, animal abuse)",,"emotional abuse, such as gaslighting and coercion (particularly in the context of intimate partner violence)","Abuse (this may include physical, psychological, domestic, financial, etc).",abuse
+,sexual-abuse,,Sexual assault,Sexual Assault,Sexual Assault,sexual abuse,sexual or gender-based violence and assault,rape and sexual assault,Sexual assault/abuse,sexual assault
+,,Stalking,,,Stalking,,,,,
+,child-abuse,child-abuse,Child abuse/pedophilia/incest,"Child abuse, pedophilia","Child Abuse, including paedophilia",child abuse,,child abuse of any kind,Child abuse/paedophilia,
+,,paedophilia,,,,,,paedophilia,,
+,animal-abuse,animal abuse,Animal cruelty or animal death,Animal cruelty or animal death,Animal cruelty and/or death,animal abuse,,animal abuse and cruelty,Animal cruelty or animal death,animal cruelty
+,abusive-language,hate-speech,,,Hate speech,Hate speech or strong abusive language,,,,
+,,,,,,,,,,
+childbirth,,,,,,,,,,
+,miscarriage,,Miscarriages/abortion,Miscarriages/Abortion,Miscarriages,,,abortion and miscarriage,Pregnancy loss,miscarriages
+,abortion,,,,Abortion,,,,,abortion
+,pregnancy-childbirth,,Pregnancy/childbirth,Pregnancy/Childbirth,Pregnancy and/or childbirth,,,,Pregnancy/childbirth,
+,other-pregnancy,,,,,,,,,
+medical,,,,,,"Medical issues (medical procedures, blood, bodily waste)",,,,
+,blood-gore,,Blood,Blood,Blood,^,,"gore, blood and body horror",Blood,
+,procedures,,,Dissection,,^,,,Dissection,
+,other-medical,illness,,,,,,"illness, particularly terminal and/or commonly traumatic illness such as cancer",,
+,,accidents,,,,,,,Industrial accidents resulting in severe injury or death,
+,,,,,,,,,,
+mental health,,,,,,,,"representations of mental health issues such as self-harm, obsessive-compulsive disorder and disordered eating (especially when represented in detail or in a graphic way)",,mental health issues
+,dysmorphia,"eating disorder, body hate","Eating disorders, body hatred, and fat phobia",Eating disorders and body hatred,"Eating disorders, body hatred, fat phobia",Eating-disordered behavior or body shaming,eating disorders,*,Eating disorders and body image,
+,self-harm,,Self-harm and suicide,Self-harm and suicide,Self-harm,"Self-harming behavior (suicide, self-inflicted injuries)",,*,Self-harm,
+,suicide,,,,Suicide,,suicide,,Suicide,suicide
+,mental-illness,,*,*,Mental illness,,,*,Mental illness,
+,addiction-and-substance-abuse,,,,Addiction,Drug and alcohol addiction,,substance abuse and addiction,,
+sexual-content,pornographic-content,,Pornographic content,Pornographic content,Pornography,"Sexual activity (including consensual sexual activity), pornographic content",,explicitly sexual / pornographic content,Sexually explicit content,
+,,explicit images,,,Explicit images,,,,,
+,incest,,incest,incest,Incest,,,,,
